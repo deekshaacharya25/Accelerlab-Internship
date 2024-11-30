@@ -58,24 +58,3 @@ tbody tr:hover {
     letter-spacing: 1px; 
 }
 
-@media (max-width: 480px) {
-    main {
-        padding: 1rem;
-    }
-    .button-container{
-        flex-direction: column;
-    }
-    #search h2 {
-        font-size: 1rem;
-    }
-    #submitButton, #nextButton{
-       padding-bottom: 10px;
-    }
-    #questions-section {
-        font-size: 0.5rem;
-    }
-
-    #questions-section label {
-        font-size: 0.5rem;
-    }
-}

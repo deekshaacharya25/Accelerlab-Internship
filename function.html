@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in Javascript</title>
+</head>
+<body>
+    <!-- <h1>Functions</h1>
+    <br> -->
+    <p id="demo"></p>
+    <script>
+        // function name(parameter1,parameter2)
+        // {
+        //     code
+        // }
+        
+        // function myFunction(p1,p2)
+        // {
+        //     return p1*p2;
+        // }
+        // document.getElementById("demo").innerHTML=myFunction(4,3);
+
+        
+        // const marks={John:90,Reena:60,Harry:58};
+        // console.log(marks);
+        // console.log(marks.Harry);
+
+        // const fruits=["Apple","Mango","Guava","Berry"];
+        // fruits.push("Cherry");
+        // console.log(fruits);
+        // fruits.pop();
+        // console.log(fruits);
+        // console.log(fruits[1]);
+        // console.log(fruits.join(" + "));
+
+        //ELSE IF
+
+        const time=new Date().getHours();
+        let greeting;
+        if(time<10){
+            greeting="Good Morning";
+        }else if(time<20){
+            greeting="Good Day";
+        }else{
+            greeting="Good Evening";
+        }
+        // document.getElementById("demo").innerHTML=greeting;
+
+        //SWITCH
+
+        // switch(expression){
+        //     case x:
+        //         code block
+        //         break;
+        //     case y:
+        //         code block
+        //     default:
+        //         code block
+        // }
+        
+        let day;
+
+        switch(new Date().getDay()){
+            case 0:
+                day="Sunday";
+                break;
+            case 1:
+                day="Monday";
+                break;
+            case 2:
+                day="Tuesday";
+                break;
+            case 3:
+                day="Wednesday";
+                break;
+            case 4:
+                day="Thursday";
+                break;
+            case 5:
+                day="Friday";
+                break;
+            case 6:
+                day="Saturday";
+                break;
+            default:
+                day="Invalid Day";
+        }
+
+        document.getElementById("demo").innerHTML=day;
+
+    </script>
+</body>
+</html>
