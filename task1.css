@@ -49,7 +49,9 @@ body {
   {
     margin-left: 150px;
   }
-
+  .text-bg-dark {
+    opacity: 95%;
+  }
   
 
   .hero {
@@ -140,6 +142,7 @@ body {
   @media (max-width: 575px) {
     .hero{
       width:100%;
+      background-size: cover;
     }
     .hero h1{
       font-size: 2rem;
@@ -175,8 +178,25 @@ body {
       margin: 50px auto 20px auto;
       max-width: 90%;
     }
+    .navbar-toggler {
+      border: none;
+      margin-right: 50px;
+  }
+  .navbar-brand img {
+    margin-left: 50px;
+}
   }
 
+  @media (max-width: 400px)
+  {
+    .hero {
+      flex-direction: column; 
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      background-size: cover;
+    }
+  }
 
   @media (max-width: 900px) and (max-height: 767px) {
     .hero {
@@ -205,12 +225,20 @@ body {
     .learning-section {
       width: 100%; 
     }
+    .navbar-toggler {
+      border: none;
+      margin-right: 50px;
+  }
+  .navbar-brand img {
+    margin-left: 50px;
+}
   }
   
  
   @media (max-width:800px) and (max-width: 991px) {
     .hero {
       width: 100%;
+      background-size: cover;
     }
     .hero-content h4 {
       margin-top: 100px;
@@ -218,7 +246,6 @@ body {
     .hero h1{
       font-size: 3rem;
       text-align: left;
-      margin: auto;
     
     }
     .hero-image img {
@@ -231,8 +258,14 @@ body {
     .btn{
       margin-bottom: 50px;
     }
- 
+    info-section {
+      background-image: url(assets/bg2.jpg);
+      text-align: center;
+      color: #111111;
+      padding: 50px 20px;
+      background-size:contain;
   }
+}
 
   @media (max-width: 1199px) {
     .hero-image img {
@@ -624,6 +657,7 @@ body {
   font-size: 1rem;
   border-radius: 20px;
   transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn-contactus:hover {
@@ -793,7 +827,7 @@ body {
   border-radius: 20px;
   padding: 20px 20px;
   font-size: 1rem;
-  font-family: 'Ubuntu';
+  font-family: sans-serif;
   font-weight: bold;
   cursor: pointer;
   text-transform: uppercase;

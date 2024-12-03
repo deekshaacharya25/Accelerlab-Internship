@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <button onclick="myFunction()">Replace</button>
+    <p id="demo">Please Visit Moodbidri!</p>
+    <script>
+        // let text="Hello JavaScript";
+        // console.log(text);
+        // console.log(text.search("JavaScript"));
+        // document.getElementById("demo").innerHTML="Hello";
+        function myFunction(){
+            let text=document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML=
+            text.replace("Moodbidri","Accelerlab");
+        }
+    </script>
+</body>
+</html>
