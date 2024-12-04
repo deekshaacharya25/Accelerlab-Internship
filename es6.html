@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 </title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        //Array mapping
+        let arr=[10,20,40,50];
+        arr.map((item) => console.log(item));
+
+        //Array Destructuring - extract values from arrays and objects and assign them to variables.
+        let b=[1,2,3,4];
+        let [first,second,third,fourth]=b;
+        console.log(first,second,third,fourth);
+
+        //Object Destructuring
+        let person={name:"Deeksha",age:22,job:"Developer"};
+        let {name,age,job}=person;
+        console.log(name,age,job);
+
+        //Destructuring with default values
+        const numbers=[1,2];
+        const [first1,second1,third1=3]=numbers;
+        console.log(first1,second1,third1);
+
+        //ES6 Spread Operator  (...) - quickly copy all or part of an existing array or object into another array or object.
+        const numbersOne=[1,2,3];
+        const numbersTwo=[4,5,6];
+        const numbersCombined=[...numbersOne,...numbersTwo];
+        console.log(numbersCombined);
+
+        //Spread operator used in combination with destructuring.
+
+        const num=[1,2,3,4,5,6];
+        const [one,two,...rest]=num;
+        console.log(one,two,rest);
+
+        //Spread operator with object
+        const personOne={name:"Deeksha",age:22,job:"Developer"};
+        const personTwo={name:"Rahul",age:25,job:"Engineer"};
+        const combined={...personOne,...personTwo};
+        console.log(combined);
+
+
+    //Ternary Operator
+    let a=10;
+    a===10 ? console.log("match") : console.log("not match");
+    </script>
+</body>
+</html>
